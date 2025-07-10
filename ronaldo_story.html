@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Legend of Cristiano Ronaldo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #333;
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            min-height: 100vh;
+        }
+
+        .header {
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '⚽';
+            position: absolute;
+            font-size: 8rem;
+            opacity: 0.1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 2;
+        }
+
+        .header p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 2;
+        }
+
+        .content {
+            padding: 50px 40px;
+        }
+
+        .story-section {
+            margin-bottom: 40px;
+            padding: 30px;
+            background: rgba(255, 107, 53, 0.05);
+            border-left: 5px solid #ff6b35;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .story-section h2 {
+            color: #ff6b35;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .story-section p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .quote {
+            background: #f8f9fa;
+            border-left: 4px solid #2a5298;
+            padding: 20px;
+            margin: 30px 0;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #2a5298;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .stats-box {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+            margin: 30px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: #ff6b35;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -37px;
+            top: 25px;
+            width: 15px;
+            height: 15px;
+            background: #ff6b35;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+
+        .timeline-year {
+            color: #ff6b35;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background: #2a5298;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .header {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>The Legend of Cristiano Ronaldo</h1>
+            <p>From Madeira to Global Superstar</p>
+        </header>
+
+        <main class="content">
+            <section class="story-section">
+                <h2>🌟 The Beginning</h2>
+                <p>In the small island of Madeira, Portugal, a young boy named Cristiano Ronaldo dos Santos Aveiro was born on February 5, 1985. Growing up in a humble family, Cristiano's passion for football was evident from an early age. His father worked as a kit man at a local club, and his mother was a cook - but their son was destined for greatness.</p>
+                
+                <p>At just 8 years old, Cristiano joined his first football club, Andorinha. His talent was undeniable, and by age 12, he made the life-changing decision to leave his family and move to Lisbon to join Sporting CP's academy. This sacrifice would prove to be the foundation of his legendary career.</p>
+            </section>
+
+            <div class="quote">
+                "I am not a perfectionist, but I like to feel that things are done well. More important than that, I feel an endless need to learn, to improve, to evolve." - Cristiano Ronaldo
+            </div>
+
+            <section class="story-section">
+                <h2>⚡ The Manchester United Era</h2>
+                <p>In 2003, at just 18 years old, Cristiano caught the attention of Sir Alex Ferguson during a friendly match. Manchester United signed him for £12.24 million, making him the most expensive teenager in English football at the time. Wearing the iconic number 7 jersey, previously worn by legends like George Best and David Beckham, Cristiano began his transformation from a promising talent to a global superstar.</p>
+                
+                <p>During his six seasons at Old Trafford, Ronaldo won three Premier League titles, one FA Cup, two League Cups, one Champions League, and one FIFA Club World Cup. His development under Ferguson's guidance was remarkable, evolving from a skillful winger to a complete footballer.</p>
+            </section>
+
+            <div class="stats-box">
+                <h3>Career Achievements</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Ballon d'Or</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">800+</span>
+                        <span class="stat-label">Career Goals</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Champions League</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">32</span>
+                        <span class="stat-label">Major Trophies</span>
+                    </div>
+                </div>
+            </div>
+
+            <section class="story-section">
+                <h2>👑 Real Madrid Glory</h2>
+                <p>In 2009, Cristiano made his dream move to Real Madrid for a then-world record fee of £80 million. At the Santiago Bernabéu, he truly became a legend. Over nine incredible seasons, he scored 451 goals in 438 appearances, becoming the club's all-time leading scorer.</p>
+                
+                <p>His rivalry with Lionel Messi during this period elevated both players to unprecedented heights. Cristiano led Real Madrid to four Champions League titles, including three consecutive victories from 2016-2018. His performances in crucial moments earned him the nickname "Mr. Champions League."</p>
+            </section>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2008</div>
+                    <p>First Ballon d'Or winner at Manchester United</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2016</div>
+                    <p>Led Portugal to European Championship victory</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2018</div>
+                    <p>Moved to Juventus, conquering Italian football</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2021</div>
+                    <p>Returned to Manchester United as a hero</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2022</div>
+                    <p>Joined Al Nassr, continuing his legendary journey</p>
+                </div>
+            </div>
+
+            <section class="story-section">
+                <h2>🏆 The Legacy</h2>
+                <p>Cristiano Ronaldo's story is one of determination, hard work, and an unwavering belief in oneself. From a young boy in Madeira to becoming one of the greatest footballers of all time, his journey inspires millions around the world. His dedication to fitness, his mental strength, and his ability to perform in the biggest moments have set him apart.</p>
+                
+                <p>Beyond football, Cristiano has become a global icon, using his platform for charitable causes and inspiring the next generation. His legacy extends far beyond the goals and trophies - he has shown that with enough determination and hard work, any dream is possible.</p>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>A legend whose story continues to inspire generations ⚽</p>
+        </footer>
+    </div>
+</body>
+</html>
